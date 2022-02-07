@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonSum;
     private Button buttonSums;
     private Button buttonSumm;
+    private Button buttonSumd;
+    private Button buttonNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         addListenerOnButton();
         subListenerOnButton();
         multListenerOnButton();
+        divListenerOnButton();
+        navListenerOnButton();
     }
 
     public void addListenerOnButton() {
@@ -75,6 +80,37 @@ public class MainActivity extends AppCompatActivity {
                 int b=Integer.parseInt(value2);
                 int summ=a*b;
                 Toast.makeText(getApplicationContext(),String.valueOf(summ), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void divListenerOnButton() {
+        edittext1 = (EditText) findViewById(R.id.editText1);
+        edittext2 = (EditText) findViewById(R.id.editText2);
+        buttonSumd = (Button) findViewById(R.id.button4);
+
+        buttonSumd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String value1=edittext1.getText().toString();
+                String value2=edittext2.getText().toString();
+                int a=Integer.parseInt(value1);
+                int b=Integer.parseInt(value2);
+                int sumd=a/b;
+                Toast.makeText(getApplicationContext(),String.valueOf(sumd), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void navListenerOnButton() {
+        edittext1 = (EditText) findViewById(R.id.editText1);
+        edittext2 = (EditText) findViewById(R.id.editText2);
+        buttonNav = (Button) findViewById(R.id.button5);
+
+        buttonNav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MainActivity2.class));
             }
         });
     }

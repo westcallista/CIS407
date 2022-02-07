@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E092ED"
+    android:backgroundTint="@null"
     tools:context=".MainActivity">
 
     <EditText
@@ -25,6 +27,7 @@
         android:layout_below="@+id/editText1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#040303"
         android:ems="10"
         android:inputType="number"
         tools:layout_editor_absoluteX="84dp"
@@ -36,7 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="109dp"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="#370740"
         android:text="ADD"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="266dp" />
@@ -47,7 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="132dp"
+        android:background="@null"
+        android:backgroundTint="#370740"
         android:text="SUBTRACT"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="266dp" />
@@ -58,8 +64,38 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="273dp"
+        android:layout_marginTop="209dp"
+        android:background="@null"
+        android:backgroundTint="#370740"
         android:text="Multiply"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="266dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="274dp"
+        android:background="@null"
+        android:backgroundTint="#370740"
+        android:text="Divide"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:background="@null"
+        android:backgroundTint="#370740"
+        android:text="Navigate to more calculation options "
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+
 </RelativeLayout>
