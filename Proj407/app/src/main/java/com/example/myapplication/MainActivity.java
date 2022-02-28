@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonSumm;
     private Button buttonSumd;
     private Button buttonNav;
+    private Button buttonHelp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         multListenerOnButton();
         divListenerOnButton();
         navListenerOnButton();
+        helpListenerOnButton();
     }
 
     public void addListenerOnButton() {
@@ -111,6 +113,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MainActivity2.class));
+            }
+        });
+    }
+
+    public void helpListenerOnButton() {
+        edittext1 = (EditText) findViewById(R.id.editText1);
+        edittext2 = (EditText) findViewById(R.id.editText2);
+        buttonHelp = (Button) findViewById(R.id.button6);
+
+        buttonHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MainActivity3.class));
             }
         });
     }

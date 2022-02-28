@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity2 extends AppCompatActivity {
 
     private EditText edittext1, edittext2;
-    private Button buttonMod, buttonPer, buttonSqr, buttonExp, buttonNav1;
+    private Button buttonMod, buttonPer, buttonSqr, buttonExp, buttonNav1, buttonHelp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
         sqrListenerOnButton();
         expListenerOnButton();
         nav1ListenerOnButton();
+        helpListenerOnButton();
     }
 
     public void modListenerOnButton() {
@@ -110,6 +111,20 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity2.this, MainActivity.class));
+            }
+        });
+
+    }
+
+    public void helpListenerOnButton() {
+        edittext1 = (EditText) findViewById(R.id.editText1);
+        edittext2 = (EditText) findViewById(R.id.editText2);
+        buttonHelp = (Button) findViewById(R.id.button6);
+
+        buttonHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity2.this, MainActivity3.class));
             }
         });
     }

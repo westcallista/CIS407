@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E092ED"
+    android:backgroundTint="@null"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Help Menu"
+        android:textColor="#000000"
+        tools:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:text="Enter a value in each of the text boxes"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:layout_alignTop="@id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150sp"
+        android:text="Press the corresponding math function"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:layout_alignTop="@id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200sp"
+        android:text="Square root only takes one integer in the first text box"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:layout_alignTop="@id/textView4" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="@null"
+        android:text="Navigate to previous calculation options "
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+</RelativeLayout>
+
+
