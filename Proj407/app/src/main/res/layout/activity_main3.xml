@@ -51,6 +51,28 @@
         android:textSize="22sp"
         tools:layout_alignTop="@id/textView4" />
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400sp"
+        android:text="The practice button will display flashcard math equations using the operation you select"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:layout_alignTop="@id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300sp"
+        android:text="Exponential will take the first text box to the power of the second text box"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        tools:layout_alignTop="@id/textView5" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
@@ -58,6 +80,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:background="@null"
+        android:backgroundTint="#370740"
         android:text="Navigate to previous calculation options "
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="562dp" />
